@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Allura&family=Alumni+Sans+Pinstripe:ital@0;1&family=Chewy&family=Comic+Relief:wght@400;700&family=Grandiflora+One&family=Ms+Madi&family=Nanum+Myeongjo&family=Parisienne&family=Playwrite+US+Trad:wght@100..400&family=Poiret+One&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Style+Script&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/logo-icon.jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <title>La Catrina - Mexiacan Bistro</title>
+  </head> 
+  <body>
+    <!-- ----------------------Preloader for text logo---------------------------->
+    <div id="preloader" class="preloader-overlay">
+      <div class="coffee-bounce">
+        <h1 class="icon">La Catrina</h1>
+      </div>
+    </div>
+    <!-- ----------------------Navbar---------------------------- -->
+    <div id="navbar">
+      <div class="logo"> 
+        <h1><a href="#home">La Catrina</a></h1>
+      </div>
+      <img
+        class="navbar-icon"
+        src="assets/navbar-icon.png"
+        alt="Menu"
+        onclick="toggleNav()"
+      />
+      <div class="sections">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#container">Gallary</a></li>
+          <li><a href="#timings">Timings</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- -----------------------Home---------------------------- -->
+    <div id="home">
+      <h1>La Catrina <br><p>Mexiacn Bistro</p> </h1>
+    </div>
+    <!-- ------------------------About-------------------------- -->
+    <div id="about">
+      <div class="about-text">
+        <h1>Welcome to La Catrina Mexican Bistro</h1>
+        <p>
+          Authentic Flavors, Modern Spirit
+          <br><br>
+          Located at 3803 10th Ave in New York City’s vibrant Inwood neighborhood, La Catrina Mexican Bistro brings the soul of Mexico to the heart of Manhattan. Inspired by rich culinary traditions and the festive spirit of La Catrina, our restaurant offers a fresh, modern take on classic Mexican cuisine.
+          <br>
+          From handmade tortillas and bold, slow-cooked moles to zesty ceviches and craft margaritas, every dish is a tribute to authentic flavors and creative presentation. Whether you’re here for a cozy dinner, weekend brunch, or lively evening with friends, our warm atmosphere and colorful décor make every visit memorable.
+          <br>
+          Celebrate the taste of Mexico—one plate, one sip, one smile at a time.
+        </p>
+      </div>
+      <div class="about-image">
+        <div class="front-image"></div>
+        <div class="back-image"></div>
+      </div>
+    </div>
+    <!-- ------------------------Frames------------------------------ -->
+     <div id="frames">
+      <div class="frame"><img src="assets/frame1.jpg" alt=""></div>
+      <div class="frame"><img src="assets/frame2.jpg" alt=""></div>
+      <div class="frame"><img src="assets/frame3.jpg" alt=""></div>
+      <div class="frame"><img src="assets/frame4.jpg" alt=""></div>
+      <div class="frame"><img src="assets/frame5.jpg" alt=""></div>
+      <div class="frame"><img src="assets/frame6.jpg" alt=""></div>
+      <div class="frame"><img src="assets/frame7.jpg" alt=""></div>
+      <div class="frame"><img src="assets/frame8.jpg" alt=""></div>
+     </div>
+    <!-- ------------------------Menu-------------------------------- -->
+    <div id="menu">
+      <h1 class="menu-title">Menu</h1>
+    </div>
+    <div class="slideshow-container">
+
+      <div class="slide fade"><img src="assets/menu0.png" alt="Menu 1"></div>
+      <div class="slide fade"><img src="assets/menu2.png" alt="Menu 2"></div>
+      <div class="slide fade"><img src="assets/menu3.png" alt="Menu 3"></div>
+      <div class="slide fade"><img src="assets/menu4.png" alt="Menu 4"></div>
+      <div class="slide fade"><img src="assets/menu5.png" alt="Menu 5"></div>
+      <div class="slide fade"><img src="assets/menu6.png" alt="Menu 6"></div>
+      <div class="slide fade"><img src="assets/menu7.png" alt="Menu 7"></div>
+      <div class="slide fade"><img src="assets/menu8.png" alt="Menu 8"></div>
+      <div class="slide fade"><img src="assets/menu9.png" alt="Menu 9"></div>
+      <div class="slide fade"><img src="assets/menu10.png" alt="Menu 10"></div>
+
+      <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+      <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+      <div class="dotss">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+      </div>
+    </div>
+        <!-- -----------------------Gallery------------------------------ -->
+        <div id="container">
+          <div class="header">
+            <h1>CULINARY ARTISTRY</h1>
+            <p>A visual celebration of flavors</p>
+          </div>
+          <div class="gallery" id="gallery">
+            <!-- Images will be populated by JavaScript -->
+          </div>
+        </div>
+        <!-- ------------------------Timings----------------------------- -->
+         <div id="timings">
+          <div class="timing-title">
+            <h2>Opening</h2>
+            <h2 class="und">Hours</h2>
+          </div>
+          <!-- <div class="separation"></div> -->
+          <div class="times">
+            <div class="mon-thu">
+              <h3>We are open every day from</h3>
+              <h2>4pm - 2am</h2>
+            </div>
+            <div class="fri-sun">
+              <h3>Brunch (Sunday)</h3>
+              <h2>12pm - 4pm</h2>
+            </div>
+            <div class="fri-sun">
+              <h3>Happy Hours (Monday - Friday)</h3>
+              <h2>4pm - 8pm</h2>
+            </div>
+          </div>
+         </div>
+    <!-- -----------------------Contact------------------------------ -->
+     <div id="contact">
+      <div class="address">
+        <div class="logo-end">
+          <h1 class="logo-text">La Catrina</h1>
+      </div>
+        <span
+          ><img
+            class="location-icon"
+            src="assets/location-icon.png"
+            alt="location-icon"
+          />
+          3803 10th Ave, New York,<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NY 10034, United States</span
+        >
+        <a
+          href="https://www.google.com/maps/place/La+Catrina+Mexican+Bistro/@40.862327,-73.9205043,17z/data=!4m15!1m8!3m7!1s0x89c2f409a714c4f5:0xf11f96188331a485!2sLa+Catrina+Mexican+Bistro!8m2!3d40.8622481!4d-73.9203183!10e9!16s%2Fg%2F11b7rxrc51!3m5!1s0x89c2f409a714c4f5:0xf11f96188331a485!8m2!3d40.8622481!4d-73.9203183!16s%2Fg%2F11b7rxrc51?entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D"
+          ><br />View on map</a
+        >
+      </div>
+      <div class="contact-us">
+        <h1>Contact Us</h1>
+        <p>
+            For any questions, feedback, or inquiries, feel free to call us or send a message on Instagram. We look forward to hearing from you!
+        </p>
+        <div>
+          <img src="assets/phone-icon.png" alt="phone-icon" />
+          <a href="tel:+16464490154">+1 646-449-0154</a>
+        </div>
+        <div class="instagram-link">
+          <img
+            class="instagram-icon"
+            src="assets/instagram.png"
+            alt="Instagram Icon"
+          />
+          <a href="https://www.instagram.com/la_catrinanyc/">Instagram </a>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!-- -----------------------Script------------------------------- -->
+    <script src="script.js"></script>
+    <script>
+      // This script will show the #home > h1 only when the home section fully covers the viewport and screen is wider than 701px
+      function updateHomeHeadingVisibility() {
+        const home = document.getElementById("home");
+        const h1 = home.querySelector("h1");
+        const rect = home.getBoundingClientRect();
+        if (window.innerWidth > 701) {
+          if (rect.top <= 0 && rect.bottom >= window.innerHeight) {
+            h1.style.display = "block";
+          } else {
+            h1.style.display = "none";
+          }
+        } else {
+          h1.style.display = ""; // Let CSS/media queries handle it
+        }
+      }
+      window.addEventListener("scroll", updateHomeHeadingVisibility);
+      window.addEventListener("resize", updateHomeHeadingVisibility);
+      // On page load, run once
+      updateHomeHeadingVisibility();
+    </script>
+  </body>
+</html>
